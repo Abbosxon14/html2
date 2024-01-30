@@ -1,0 +1,32 @@
+$baccol:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(9,9,121,1) 40%, rgba(9,9,121,1) 60%, rgba(255,0,0,1) 100%);
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.K{
+    width: 800px;
+    height: 500px;
+    background: $baccol;
+    margin: 0 auto;
+    border-radius: 50px;
+    @include flex();
+    button{
+        width: 15rem;
+        height: 5rem;
+        border-radius: 10px;
+        border: 1px solid;
+        box-shadow: 2px 20px 24px rgba(246, 62, 62, 0.16);
+        font-size: 24px;
+        &:hover{
+            border: none;
+            color: #000000;
+            width: 18rem;
+            height: 6rem;
+            background-color: #03CEA4;
+            cursor: pointer;
+            font-size: 26px; 
+        }
+    }
+}
